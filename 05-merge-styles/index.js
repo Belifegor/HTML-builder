@@ -18,7 +18,8 @@ async function readStyleFile(file) {
 
 async function mergeStyles() {
   try {
-    const stylesExists = await fs.access(stylesDirectory)
+    const stylesExists = await fs
+      .access(stylesDirectory)
       .then(() => true)
       .catch(() => false);
 
