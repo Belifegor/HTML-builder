@@ -25,7 +25,7 @@ fs.readdir(subdirectoryPath, { withFileTypes: true }, (err, files) => {
           const fileExtension = path.extname(file.name);
 
           console.log(
-            `File: ${fileNameWithoutExtension} - ${fileExtension.slice(
+            `${fileNameWithoutExtension} - ${fileExtension.slice(
               1,
             )} - ${fileSize}kb`,
           );
